@@ -33,7 +33,7 @@ public class ControllerReactive {
 		public Map<Long, Object> trackAllBooking() {
 			Flux<Employee> emp =  webClient.get().uri("/all").retrieve().bodyToFlux(Employee.class);
 			Mono<List<Employee>> e = emp.filter(k->k.getId()>0).map(s -> s).collectList();
-			Flux<Employee> flux = e.flatMapIterable(list -> list);
+			Flux<Employee> flux2 = e.flatMapIterable(list -> list);
 			
 			
 			return null;
