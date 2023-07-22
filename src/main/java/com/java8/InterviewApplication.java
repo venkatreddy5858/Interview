@@ -25,7 +25,7 @@ public class InterviewApplication {
 		findfirstRepeatingCharacter("ilovejavatechie");
 		SortNumbers();
 		SortReverseOrder();
-		FindLongestString();
+		FindLongggestString();
 		findNo1InGivenNumbers();
 		
 	
@@ -39,7 +39,7 @@ public class InterviewApplication {
 		
 	}
 
-	private static void FindLongestString() {
+	private static void FindLongggestString() {
 		String[] str = {"venkat","uma","vijay"};
 		String longestString = Arrays.stream(str).reduce(( word1,word2) -> word1.length()> word2.length()?word1:word2).get();
 		System.out.println(longestString);
