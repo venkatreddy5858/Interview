@@ -104,7 +104,7 @@ public class InterviewApplication {
 		String[] occ = string.split("");
 		Map<String, List<String>> ad = Arrays.stream(occ).collect(Collectors.groupingBy(s -> s));
 		System.out.println(ad);
-		System.out.println(ad);
+		
 
 	}
 
